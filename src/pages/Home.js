@@ -23,7 +23,6 @@ const Home = () => {
       <ThriveLinkSlider />
       <ThriveRecentNews />
       <ThriveCTAGrid />
-      <ThriveMasonry />
     </>
   );
 };
