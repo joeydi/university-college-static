@@ -8,6 +8,9 @@ body {
   }
 }
 
+::selection { background: $gold; }
+::-moz-selection { background: $gold; }
+
 h1,
 .h1 {
   @include md {
