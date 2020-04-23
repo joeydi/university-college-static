@@ -34,42 +34,42 @@ ThriveIconCardGrid.defaultProps = {
       title: "First Year Experience",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/1",
+      link: "/thrive/first-year-experience",
     },
     {
       icon: icon2,
       title: "Co-op Internships",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/2",
+      link: "/thrive/coop-internships",
     },
     {
       icon: icon3,
       title: "Learning Communities",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/3",
+      link: "/thrive/learning-communities",
     },
     {
       icon: icon4,
       title: "Senior Capstones",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/4",
+      link: "/thrive/senior-capstones",
     },
     {
       icon: icon5,
       title: "Service Learning",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/5",
+      link: "/thrive/service-learning",
     },
     {
       icon: icon6,
       title: "Undergraduate Research and Creative Activity",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
-      link: "/thrive/6",
+      link: "/thrive/undergraduate-research-and-creative-activity",
     },
   ],
 };

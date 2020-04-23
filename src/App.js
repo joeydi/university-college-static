@@ -17,20 +17,18 @@ function App() {
           <Link className="home" to="/">
             <span className="sr-only">Home</span>
           </Link>
-          <Link className="thrive" to="/thrive">Thrive at ASU</Link>
-          <Link className="thrive-subpage" to="/thrive/1">Thrive Subpage</Link>
+          <Link className="thrive" to="/thrive">
+            Thrive at ASU
+          </Link>
+          <Link className="thrive-subpage" to="/thrive/first-year-experience">
+            Thrive Subpage
+          </Link>
         </header>
         <main>
           <Switch>
-            <Route exact path="/thrive">
-              <Thrive />
-            </Route>
-            <Route path="/thrive/:id">
-              <ThriveSubpage />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+            <Route exact path="/thrive" component={Thrive} />
+            <Route path="/thrive/:slug" component={ThriveSubpage} />
+            <Route path="/" component={Home} />
           </Switch>
         </main>
         <footer>
