@@ -1,5 +1,7 @@
 import React from "react";
 
+import arrowUp from "../img/arrow-up.svg";
+
 import image1 from "../img/american-indian-student-support-services.jpg";
 import image2 from "../img/first-year-success-center.jpg";
 import image3 from "../img/the-lead-program.jpg";
@@ -24,7 +26,7 @@ const ThrivePhotoCardGrid = (props) => {
             <div className="col-md-6 col-lg-4 mb-10" key={index}>
               <a href={item.link} className="photo-card">
                 <div className="photo-card-content">
-                  <strong>{item.title}</strong>
+                  <strong>{item.title} <img className="arrow" src={arrowUp} alt="" /></strong>
                   <span>{item.description}</span>
                 </div>
                 <img src={item.image} alt="" />

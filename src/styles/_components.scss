@@ -262,6 +262,10 @@ section.thrive-photo-card-grid {
         background-color: rgba(140, 29, 64, 0.85);
         background-color: transparentize($maroon, 0.15);
 
+        strong .arrow {
+          transform: rotate(90deg);
+        }
+
         span {
           height: auto;
           padding: 0 30px 30px;
@@ -283,11 +287,21 @@ section.thrive-photo-card-grid {
     strong {
       display: flex;
       align-items: flex-end;
+      justify-content: space-between;
       padding: 30px 30px 20px;
       @extend .lead;
       line-height: 1.25;
       font-weight: $font-weight-medium;
       color: $gold;
+
+      .arrow {
+        display: block;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+        transition: transform 0.35s $ease-out;
+      }
     }
 
     span {
