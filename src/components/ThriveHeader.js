@@ -1,5 +1,4 @@
 import React from "react";
-import widont from "widont";
 
 import { ReactComponent as HeaderBackground } from "../img/thrive-header-bg.svg";
 
