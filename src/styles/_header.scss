@@ -1,9 +1,10 @@
 header {
   position: relative;
+  padding-top: 11.914%;
 
   img {
+    @include fill;
     display: block;
-    width: 100%;
   }
 
   a {

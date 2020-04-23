@@ -1,4 +1,10 @@
-footer img {
-    display: block;
-    width: 100%;
+footer {
+    position: relative;
+    padding-top: 43.515%;
+    background-color: $darkest-grey;
+
+    img {
+        @include fill;
+        display: block;
+    }
 }
