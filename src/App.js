@@ -17,7 +17,7 @@ function App() {
           <Link className="home" to="/">
             <span className="sr-only">Home</span>
           </Link>
-          <Link className="thrive" to="/thrive">About Us</Link>
+          <Link className="thrive" to="/thrive">Thrive at ASU</Link>
           <Link className="thrive-subpage" to="/thrive/1">Thrive Subpage</Link>
         </header>
         <main>
