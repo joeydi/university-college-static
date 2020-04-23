@@ -45,6 +45,8 @@ section.thrive-photo-header {
   }
 
   @include md {
+    margin-bottom: 0;
+
     .container {
       margin-bottom: 0;
     }
