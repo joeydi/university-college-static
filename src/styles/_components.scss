@@ -22,10 +22,11 @@ section.thrive-photo-header {
 
   .container {
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -30vw;
   }
 
   p {
+    margin-bottom: 1em;
     font-weight: $font-weight-bold;
     font-size: rem(20px);
   }
@@ -44,6 +45,10 @@ section.thrive-photo-header {
   }
 
   @include md {
+    .container {
+      margin-bottom: 0;
+    }
+
     h1 {
       font-size: rem(60px);
     }

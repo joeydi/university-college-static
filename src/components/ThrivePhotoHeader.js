@@ -1,4 +1,5 @@
 import React from "react";
+import widont from 'widont';
 
 import { ReactComponent as HeaderBackground } from "../img/thrive-photo-header-bg.svg";
 import defaultPhoto from "../img/homepage-header-photo.png";
@@ -13,7 +14,7 @@ const ThrivePhotoHeader = ({ heading, subheading, photo, photoAlt }) => {
           <div className="col-11 col-md-10 col-lg-8">
             <p>{heading}</p>
             <h1>
-              <span>{subheading}</span>
+              <span>{widont(subheading)}</span>
             </h1>
           </div>
         </div>
