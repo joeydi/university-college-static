@@ -22,15 +22,15 @@ function App() {
         </header>
         <main>
           <Switch>
-            <Router exact path="/thrive">
+            <Route exact path="/thrive">
               <Thrive />
-            </Router>
-            <Router path="/thrive/:id">
+            </Route>
+            <Route path="/thrive/:id">
               <ThriveSubpage />
-            </Router>
-            <Router path="/">
+            </Route>
+            <Route path="/">
               <Home />
-            </Router>
+            </Route>
           </Switch>
         </main>
         <footer>

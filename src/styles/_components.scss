@@ -39,7 +39,71 @@ section.thrive-photo-header {
       background-color: $black;
       color: $white;
       display: inline;
-      padding: 0.1em;
+      padding: 0.1em 0.2em;
+      box-decoration-break: clone;
+    }
+  }
+
+  @include md {
+    margin-bottom: 0;
+
+    .container {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      font-size: rem(60px);
+    }
+
+    p {
+      font-size: rem(24px);
+    }
+  }
+
+  @include lg {
+    p {
+      font-size: rem(32px);
+    }
+
+    h1 {
+      font-size: rem(80px);
+    }
+  }
+
+  @include xl {
+    h1 {
+      font-size: rem(100px);
+    }
+  }
+}
+
+section.thrive-header {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100vw;
+  min-height: 21.875vw;
+
+  svg {
+    @include fill;
+    display: block;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: $font-weight-bold;
+    font-size: rem(40px);
+
+    span {
+      background-color: $black;
+      color: $white;
+      display: inline;
+      padding: 0.1em 0.2em;
       box-decoration-break: clone;
     }
   }
@@ -312,6 +376,99 @@ section.thrive-photo-card-grid {
       opacity: 0;
       transform: translateY(10px);
       transition: opacity 0.5s, transform 0.35s $ease-out;
+    }
+  }
+}
+
+section.thrive-icon-card-grid {
+  position: relative;
+
+  .icon-card {
+    position: relative;
+    display: block;
+    padding: 80px 40px;
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      z-index: 1;
+
+      .bg {
+        transform: scale(1.1);
+        box-shadow: 0 0 9px rgba(0,0,0,0.7);
+        transition: box-shadow 0.25s, transform 0.5s $ease-out;
+      }
+
+      h3,
+      p {
+        transform: translateY(-20px);
+        transition: transform 0.5s $ease-out;
+      }
+
+      img {
+        transform: scale(1.1) translateY(-10px);
+        transition: transform 0.5s $ease-out;
+      }
+    }
+
+    .bg {
+      @include fill;
+      z-index: -1;
+      background-color: $gold;
+      transition: box-shadow 0.5s, transform 0.5s $ease-out;
+    }
+
+    h3 {
+      width: 100%;
+      max-width: 500px;
+      padding-right: 60px;
+      @extend .lead;
+      font-weight: $font-weight-medium;
+      transition: transform 0.5s $snappy;
+    }
+
+    p {
+      width: 100%;
+      max-width: 500px;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: $font-weight-light;
+      transition: transform 0.5s $snappy;
+    }
+
+    img {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      transition: transform 0.5s $snappy;
+    }
+  }
+
+  @include md {
+    .icon-card {
+      padding: 100px 60px;
+    }
+  }
+
+  @include lg {
+    .icon-card {
+      padding: 175px 75px;
+
+      h3,
+      p {
+        max-width: 580px;
+      }
+
+      img {
+        right: 40px;
+        top: 80px;
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 }
