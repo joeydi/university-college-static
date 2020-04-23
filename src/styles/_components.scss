@@ -1,0 +1,71 @@
+section.thrive-photo-header {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100vw;
+  min-height: 50vw;
+  margin-bottom: 140px;
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 50%;
+  }
+
+  svg {
+    @include fill;
+    display: block;
+  }
+
+  .container {
+    position: relative;
+    margin-bottom: -100px;
+  }
+
+  p {
+    font-weight: $font-weight-bold;
+    font-size: rem(20px);
+  }
+
+  h1 {
+    font-weight: $font-weight-bold;
+    font-size: rem(40px);
+
+    span {
+      background-color: $black;
+      color: $white;
+      display: inline;
+      padding: 0.1em;
+      box-decoration-break: clone;
+    }
+  }
+
+  @include md {
+    h1 {
+      font-size: rem(60px);
+    }
+
+    p {
+      font-size: rem(24px);
+    }
+  }
+
+  @include lg {
+    p {
+      font-size: rem(32px);
+    }
+
+    h1 {
+      font-size: rem(80px);
+    }
+  }
+
+  @include xl {
+    h1 {
+      font-size: rem(100px);
+    }
+  }
+}

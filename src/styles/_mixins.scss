@@ -1,0 +1,93 @@
+@mixin sm {
+    @media (min-width: map-get($grid-breakpoints, 'sm')) { @content; }
+}
+
+@mixin md {
+    @media (min-width: map-get($grid-breakpoints, 'md')) { @content; }
+}
+
+@mixin lg {
+    @media (min-width: map-get($grid-breakpoints, 'lg')) { @content; }
+}
+
+@mixin xl {
+    @media (min-width: map-get($grid-breakpoints, 'xl')) { @content; }
+}
+
+@mixin xxl {
+    @media (min-width: map-get($grid-breakpoints, 'xxl')) { @content; }
+}
+
+@mixin fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.fill { @include fill; }
+
+@mixin cover {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.cover { @include cover; }
+
+@mixin contain {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.cover { @include cover; }
+
+@mixin section-margin {
+    margin: $spacer 0;
+
+    @include sm {
+        margin: $spacer*2 0;
+    }
+
+    @include md {
+        margin: $spacer*3 0;
+    }
+
+    @include lg {
+        margin: $spacer*4 0;
+    }
+}
+.section-margin { @include section-margin; }
+
+@mixin section-padding {
+    padding: $spacer 0;
+
+    @include sm {
+        padding: $spacer*2 0;
+    }
+
+    @include md {
+        padding: $spacer*3 0;
+    }
+
+    @include lg {
+        padding: $spacer*4 0;
+    }
+}
+.section-padding { @include section-padding; }
+
+@mixin content-padding {
+    padding: 20px;
+
+    @include md {
+        padding: 30px;
+    }
+
+    @include lg {
+        padding: 40px;
+    }
+}
+
+@mixin debug {
+    outline: 1px solid red;
+}
+.debug { @include debug; }

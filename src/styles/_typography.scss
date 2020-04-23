@@ -1,0 +1,84 @@
+body {
+    letter-spacing: -0.025rem;
+
+    @include md {
+        font-size: rem(18px);
+    }
+}
+
+h1, .h1 {
+    @include lg {
+        font-size: rem(50px);
+    }
+}
+
+h2, .h2 {
+    @include lg {
+        font-size: rem(40px);
+    }
+}
+
+hr {
+    width: 50px;
+    margin: $spacer auto $spacer 0;
+
+    @include md {
+        margin: $spacer*2 auto $spacer*2 0;
+
+        &:last-child {
+            margin-bottom: $spacer;
+        }
+    }
+
+    @include xl {
+        &.lg {
+            margin: $spacer*3 auto $spacer*3 0;
+        }
+
+        &:last-child {
+            margin-bottom: $spacer;
+        }
+    }
+}
+
+b,
+strong {
+    font-weight: $font-weight-medium;
+}
+
+ul,
+ol {
+    margin-bottom: $paragraph-margin-bottom;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    min-width: 165px;
+}
+
+.eyebrow {
+    font-size: rem(18px);
+    font-weight: $font-weight-light;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.eyebrow-sm {
+    font-size: rem(13px);
+    font-weight: $font-weight-light;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.small {
+    font-size: rem(14px);
+    font-weight: $font-weight-medium;
+
+    @include md {
+        font-size: rem(15px);
+    }
+}

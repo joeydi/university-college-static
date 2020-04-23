@@ -1,0 +1,85 @@
+// Colors
+$white:                     #FFFFFF;
+$lighter-grey:              #EDEDED;
+$light-grey:                #BCBCBC;
+$grey:                      #999999;
+$dark-grey:                 #666666;
+$darker-grey:               #353535;
+$darkest-grey:              #1F1F1F;
+$black:                     #000000;
+
+$gold:                      #FFC627;
+$maroon:                    #8E183F;
+$green:                     #71BE43;
+$blue:                      #00A4E0;
+$orange:                    #F5823B;
+$primary:                   $gold;
+
+// Fonts
+$font-family-sans-serif:    'Roboto', sans-serif;
+$font-family-base:          $font-family-sans-serif;
+
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-medium:        500;
+$font-weight-bold:          700;
+$font-weight-black:         900;
+
+$font-size-base:            1rem;
+$font-weight-base:          $font-weight-normal;
+$line-height-base:          2;
+
+$paragraph-margin-bottom:   2rem;
+$label-margin-bottom:       0.25rem;
+$input-border-color:        $grey;
+$input-border-radius:       0;
+
+$headings-margin-bottom:    1rem;
+$headings-font-weight:      $font-weight-light;
+$headings-line-height:      1.25;
+
+$h1-font-size:              rem(40px);
+$h2-font-size:              rem(30px);
+
+$lead-font-size:            1.25rem;
+
+$btn-padding-y:             0.75rem;
+$btn-padding-x:             2rem;
+$btn-font-size:             rem(15px);
+$btn-font-weight:           $font-weight-medium;
+
+$hr-border-width:           4px;
+$hr-border-color:           $gold;
+$hr-margin-y:               30px;
+
+$transition-fade:           opacity 0.25s;
+
+// Transitions
+$snappy:                    cubic-bezier(0.47, 0.03, 0.29, 1);
+$ease-out:                  cubic-bezier(0, 0.5, 0.25, 1);
+
+// Bootstrap Overrides
+$spacer: 30px;
+$spacers: (
+    sm: $spacer,
+    md: ($spacer * 2),
+    lg: ($spacer * 3),
+    xl: ($spacer * 4)
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1290px
+);
