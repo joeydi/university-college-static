@@ -76,3 +76,13 @@ section.thrive-photo-header {
     }
   }
 }
+
+section.thrive-text {
+  @include md {
+    font-size: rem(20px);
+  }
+
+  @include lg {
+    font-size: rem(24px);
+  }
+}
