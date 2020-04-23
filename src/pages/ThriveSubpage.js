@@ -3,6 +3,8 @@ import React from "react";
 import ThriveHeader from "../components/ThriveHeader";
 import ThriveText from "../components/ThriveText";
 import ThriveMasonry from "../components/ThriveMasonry";
+import ThrivePageNav from "../components/ThrivePageNav";
+import ThriveFooter from "../components/ThriveFooter";
 
 const pages = [
   {
@@ -53,6 +55,8 @@ const ThriveSubpage = ({ match }) => {
         <ThriveHeader heading={page.heading} />
         <ThriveText content={page.description} style={{ textAlign: "center", fontWeight: 300 }} />
         <ThriveMasonry />
+        <ThrivePageNav />
+        <ThriveFooter />
       </>
     )
   );
