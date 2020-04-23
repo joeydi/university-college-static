@@ -22,6 +22,10 @@ h1,
   }
 
   @include xl {
+    font-size: rem(90px);
+  }
+
+  @include xxl {
     font-size: rem(100px);
   }
 }
