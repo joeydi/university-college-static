@@ -17,7 +17,6 @@ const Home = () => {
     <>
       <ThrivePhotoHeader />
       <ThriveText />
-      <ThriveTextStats />
       <ThriveCircleFeature />
       <ThrivePhotoCardGrid />
       <ThriveIconCardGrid />

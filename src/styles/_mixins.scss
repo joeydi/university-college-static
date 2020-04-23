@@ -42,35 +42,43 @@
 .cover { @include cover; }
 
 @mixin section-margin {
-    margin: $spacer 0;
+    margin: 40px 0;
 
     @include sm {
-        margin: $spacer*2 0;
+        margin: 60px 0;
     }
 
     @include md {
-        margin: $spacer*3 0;
+        margin: 80px 0;
     }
 
     @include lg {
-        margin: $spacer*4 0;
+        margin: 100px 0;
+    }
+
+    @include xl {
+        margin: 120px 0;
     }
 }
 .section-margin { @include section-margin; }
 
 @mixin section-padding {
-    padding: $spacer 0;
+    padding: 40px 0;
 
     @include sm {
-        padding: $spacer*2 0;
+        padding: 60px 0;
     }
 
     @include md {
-        padding: $spacer*3 0;
+        padding: 80px 0;
     }
 
     @include lg {
-        padding: $spacer*4 0;
+        padding: 100px 0;
+    }
+
+    @include xl {
+        padding: 120px 0;
     }
 }
 .section-padding { @include section-padding; }

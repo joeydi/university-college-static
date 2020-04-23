@@ -2,7 +2,7 @@ import React from "react";
 
 const ThriveText = ({ style, content }) => {
   return (
-    <section className="thrive-text section-padding">
+    <section className="thrive-text section-margin">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-8">
