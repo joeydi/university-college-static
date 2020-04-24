@@ -4,7 +4,7 @@ import ThrivePhotoHeader from '../components/ThrivePhotoHeader';
 import ThriveText from '../components/ThriveText';
 import ThriveCircleFeature from '../components/ThriveCircleFeature';
 import ThrivePhotoCardGrid from '../components/ThrivePhotoCardGrid';
-import ThriveQuoteSlider from '../components/ThriveQuoteSlider';
+import ThriveTestimonialSlider from '../components/ThriveTestimonialSlider';
 import ThriveLinkSlider from '../components/ThriveLinkSlider';
 import ThriveRecentNews from '../components/ThriveRecentNews';
 import ThriveCTAGrid from '../components/ThriveCTAGrid';
@@ -16,7 +16,7 @@ const Home = () => {
       <ThriveText />
       <ThriveCircleFeature />
       <ThrivePhotoCardGrid />
-      <ThriveQuoteSlider />
+      <ThriveTestimonialSlider />
       <ThriveLinkSlider />
       <ThriveRecentNews />
       <ThriveCTAGrid />

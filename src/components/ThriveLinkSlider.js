@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Flickity from "flickity";
 import "flickity/dist/flickity.min.css";
 
