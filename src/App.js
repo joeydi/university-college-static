@@ -1,17 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import header from "./img/header.png";
-import footer from "./img/footer.png";
-
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Thrive from "./pages/Thrive";
 import ThriveSubpage from "./pages/ThriveSubpage";
+
+import header from "./img/header.png";
+import footer from "./img/footer.png";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <header>
           <img src={header} alt="" />
           <Link className="home" to="/">
