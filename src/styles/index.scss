@@ -15,6 +15,60 @@
 @import "footer";
 @import "components";
 
+// Media Aspect Ratios
+[class*="aspect"] {
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    > img {
+        @include fill;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.aspect-100,
+.aspect-75,
+.aspect-66,
+.aspect-50,
+.aspect-33,
+.aspect-25 {
+    position: relative;
+    display: block;
+
+    > img,
+    > video {
+        @include fill;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.aspect-100 { padding-top: 100%; }
+.aspect-75 { padding-top: 75%; }
+.aspect-66 { padding-top: 66%; }
+.aspect-50 { padding-top: 50%; }
+.aspect-33 { padding-top: 33%; }
+.aspect-25 { padding-top: 25%; }
+
+.aspect-portrait { padding-top: 10/8*100%; }
+.aspect-square { padding-top: 100%; }
+.aspect-block { padding-top: 5/6*100%; }
+.aspect-landscape { padding-top: 2/3*100%; }
+.aspect-video { padding-top: 9/16*100%; }
+.aspect-hero { padding-top: 5/11*100%; }
+
+// Background Colors
+
+.bg-white { background-color: $white; }
+.bg-lighter-grey { background-color: $lighter-grey; }
+.bg-light-grey { background-color: $light-grey; }
+.bg-grey { background-color: $grey; }
+.bg-dark-grey { background-color: $dark-grey; }
+.bg-darker-grey { background-color: $darker-grey; }
+.bg-black { background-color: $black; }
+
 // Custom Column Gutters
 
 .row.gutter-4 {

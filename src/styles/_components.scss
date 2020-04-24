@@ -32,12 +32,12 @@ section.thrive-photo-header {
   }
 
   h1 span {
-      background-color: $black;
-      color: $white;
-      display: inline;
-      padding: 0.05em 0.2em;
-      box-decoration-break: clone;
-      line-height: 1.2em;
+    background-color: $black;
+    color: $white;
+    display: inline;
+    padding: 0.05em 0.2em;
+    box-decoration-break: clone;
+    line-height: 1.2em;
   }
 
   @include md {
@@ -365,7 +365,7 @@ section.thrive-icon-card-grid {
 
       .bg {
         transform: scale(1.1);
-        box-shadow: 0 0 9px rgba(0,0,0,0.7);
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
         transition: box-shadow 0.25s, transform 0.5s $ease-out;
       }
 
@@ -440,5 +440,43 @@ section.thrive-icon-card-grid {
         height: 100px;
       }
     }
+  }
+}
+
+section.thrive-recent-news {
+  .excerpt {
+    position: relative;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      display: block;
+    }
+
+    picture {
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      margin-bottom: 10px;
+
+      a {
+        font-weight: $font-weight-medium;
+        color: $maroon;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .archive-link {
+    text-decoration: underline;
+    font-weight: $font-weight-medium;
+    color: $maroon;
   }
 }
