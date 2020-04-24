@@ -480,3 +480,35 @@ section.thrive-recent-news {
     color: $maroon;
   }
 }
+
+section.thrive-cta-grid {
+  img {
+    display: inline-block;
+    margin-bottom: rem(20px);
+  }
+
+  p {
+    margin-bottom: rem(10px);
+  }
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+
+  a.btn {
+    margin-top: 20px;
+    font-weight: $font-weight-regular;
+  }
+
+  @include lg {
+    font-size: rem(20px);
+
+    a.btn {
+      min-width: 260px;
+    }
+  }
+
+  @include xl {
+    font-size: rem(22px);
+  }
+}
