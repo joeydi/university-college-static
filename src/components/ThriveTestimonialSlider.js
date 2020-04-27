@@ -15,7 +15,7 @@ class ThriveTestimonialSlider extends Component {
         "M73.248.312a1.064 1.064 0 011.593 1.404l-.089.1L26.57 50l48.183 48.184c.384.383.413.987.089 1.404l-.089.1a1.064 1.064 0 01-1.404.089l-.1-.089-48.936-48.936a1.064 1.064 0 01-.089-1.404l.089-.1L73.248.312z",
       pageDots: false,
       wrapAround: true,
-      imagesLoaded: true
+      imagesLoaded: true,
     });
   }
 
@@ -23,10 +23,10 @@ class ThriveTestimonialSlider extends Component {
     return (
       <section className="thrive-testimonial-slider section-padding">
         <SliderBackground />
-        <div className="container">
-          <div className="slider" ref={(el) => (this.flickityEl = el)}>
-            {this.props.items.map((item, index) => (
-              <div className="testimonial" key={index}>
+        <div className="slider" ref={(el) => (this.flickityEl = el)}>
+          {this.props.items.map((item, index) => (
+            <div className="testimonial" key={index}>
+              <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-6 col-lg-5">
                     <blockquote>
@@ -40,8 +40,8 @@ class ThriveTestimonialSlider extends Component {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
     );

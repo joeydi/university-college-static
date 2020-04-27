@@ -626,6 +626,7 @@ section.thrive-link-slider {
 section.thrive-testimonial-slider {
   position: relative;
   padding: 20vw 0;
+  overflow: hidden;
 
   svg {
     @include fill;
@@ -665,6 +666,10 @@ section.thrive-testimonial-slider {
     border-radius: 50%;
   }
 
+  .flickity-viewport {
+    overflow: visible;
+  }
+
   .flickity-button {
     background-color: transparent;
     color: $white;
@@ -700,16 +705,17 @@ section.thrive-testimonial-slider {
     .slider {
       margin: 0 20px;
     }
+
     .testimonial-photo {
       width: 408px;
     }
 
     .flickity-prev-next-button.previous {
-      left: -50px;
+      left: -10px;
     }
 
     .flickity-prev-next-button.next {
-      right: -50px;
+      right: -10px;
     }
   }
 
@@ -719,24 +725,6 @@ section.thrive-testimonial-slider {
     .flickity-prev-next-button {
       width: 54px;
       height: 54px;
-    }
-
-    .flickity-prev-next-button.previous {
-      left: -60px;
-    }
-
-    .flickity-prev-next-button.next {
-      right: -60px;
-    }
-  }
-
-  @include xl {
-    .flickity-prev-next-button.previous {
-      left: -100px;
-    }
-
-    .flickity-prev-next-button.next {
-      right: -100px;
     }
   }
 }
