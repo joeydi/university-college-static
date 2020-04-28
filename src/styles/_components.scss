@@ -892,7 +892,11 @@ section.thrive-footer {
     .content {
       color: $gold;
       transform: translateY(-10px);
-      transition: transform 0.5s $ease-out;
+      transition: color 0.25s, transform 0.5s $ease-out;
+
+      .quotationMark path {
+        fill: $gold;
+      }
     }
 
     .bg {
@@ -941,11 +945,16 @@ section.thrive-footer {
     }
 
     p {
-      width: calc(100% - 40px);
+      width: calc(100% - 50px);
     }
 
     img {
       max-width: 90%;
+    }
+
+    .quotationMark path {
+      fill: $black;
+      transition: fill 0.25s;
     }
   }
 
@@ -1013,7 +1022,7 @@ section.thrive-footer {
     .content {
       background-color: transparentize($bright-maroon, 0.15);
       transform: translateY(-10px);
-      transition: transform 0.5s $ease-out;
+      transition: background-color 0.25s linear, transform 0.5s $ease-out;
     }
 
     .bg {
@@ -1022,7 +1031,8 @@ section.thrive-footer {
     }
 
     .arrow {
-      transform: rotate(0);
+      transform: translateY(-10px) rotate(0);
+      transition: transform 0.5s $ease-out;
     }
   }
 
@@ -1055,7 +1065,7 @@ section.thrive-footer {
     line-height: 1.15;
     letter-spacing: -0.025em;
     color: $gold;
-    transition: background-color 0.125s linear, transform 0.5s $snappy;
+    transition: background-color 0.25s linear, transform 0.5s $snappy;
 
     *:last-child {
       margin-bottom: 0;
@@ -1070,7 +1080,7 @@ section.thrive-footer {
     }
 
     p {
-      width: calc(100% - 40px);
+      width: calc(100% - 50px);
     }
   }
 
@@ -1122,16 +1132,31 @@ section.thrive-footer {
   flex-flow: column nowrap;
   align-items: flex-start;
   min-height: 300px;
+  transition: box-shadow 0.25s, transform 0.5s $snappy;
+  overflow: hidden;
 
   &:hover {
+    z-index: 1;
     text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.25s, transform 0.5s $ease-out;
 
     .content {
       background-color: transparentize($bright-maroon, 0.15);
+      transform: translateY(-10px);
+      transition: color 0.25s, background-color 0.25s, transform 0.5s $ease-out;
+      color: $gold;
+    }
+
+    .bg {
+      transform: scale(1.1);
+      transition: transform 0.5s $ease-out;
     }
 
     .arrow {
-      transform: rotate(0);
+      transform: translateY(-10px) rotate(0);
+      transition: transform 0.5s $ease-out;
     }
   }
 
@@ -1145,13 +1170,14 @@ section.thrive-footer {
     position: relative;
     z-index: 2;
     margin-top: auto;
-    padding: 20px;
+    margin-bottom: -10px;
+    padding: 20px 20px 40px 20px;
     @extend .lead;
     font-weight: $font-weight-medium;
     line-height: 1.15;
     letter-spacing: -0.025em;
     color: $black;
-    transition: color 0.25s, transform 0.5s $snappy;
+    transition: color 0.25s, background-color 0.25s, transform 0.5s $snappy;
 
     *:last-child {
       margin-bottom: 0;
@@ -1166,13 +1192,14 @@ section.thrive-footer {
     }
 
     p {
-      width: calc(100% - 40px);
+      width: calc(100% - 50px);
     }
   }
 
   .bg {
     @include fill;
     object-fit: cover;
+    transition: transform 0.5s $snappy;
   }
 
   .arrow {
@@ -1193,7 +1220,7 @@ section.thrive-footer {
     }
 
     .content {
-      padding: 35px;
+      padding: 35px 35px 55px 35px;
     }
 
     .arrow {
@@ -1207,6 +1234,6 @@ section.thrive-footer {
   }
 
   @include xl {
-    min-height: 500px;
+    min-height: 450px;
   }
 }

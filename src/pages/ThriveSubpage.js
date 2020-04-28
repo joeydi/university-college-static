@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 
 // Page section components
 import ThriveHeader from "../components/ThriveHeader";
@@ -21,9 +22,12 @@ import serviceLearning from "../img/page-service-learning.jpg";
 import undergraduateResearchAndCreativeActivity from "../img/page-undergraduate-research-and-creative-activity.jpg";
 
 // Page content images
+import { ReactComponent as QuotationMark } from "../img/quotation-mark.svg";
+
 import firstYearExperience1 from "../img/card-first-year-experience-1.jpg";
 import firstYearExperience2 from "../img/card-first-year-experience-2.jpg";
 import firstYearExperience3 from "../img/card-first-year-experience-3.jpg";
+import firstYearExperience4 from "../img/card-first-year-experience-4.jpg";
 import firstYearExperienceResources from "../img/card-first-year-experience-resources.svg";
 
 import coopInternships1 from "../img/card-coop-internships-1.jpg";
@@ -64,7 +68,7 @@ const pages = [
         component: ThriveGoldCard,
         title: "Adulting 101",
         content:
-          "<h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>",
+          `<p>${ReactDOMServer.renderToString(<QuotationMark className="quotationMark" />)}</p><h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>`,
         link: "/",
       },
       {
@@ -96,9 +100,10 @@ const pages = [
         link: "/",
       },
       {
-        component: ThriveGoldCard,
+        component: ThriveBackgroundCard,
         title: "First-year finances",
         content: "<p>Comprehensive resource page for first-year financial questions.</p>",
+        image: firstYearExperience4,
         link: "/",
       },
     ],
@@ -158,7 +163,7 @@ const pages = [
         component: ThrivePhotoCard,
         title: "First-Year Communities",
         content: "<p>Campus housing connects students who share academic interests.</p>",
-        image: learningCommunities1,
+        image: learningCommunities2,
         link: "/",
       },
       {
@@ -202,7 +207,7 @@ const pages = [
         component: ThriveGoldCard,
         title: "FURI Symposium",
         content:
-          "<h3>FURI improved my confidence in my ability to both independently and collaboratively produce and prototype a novel product.”</h3>",
+          `<p>${ReactDOMServer.renderToString(<QuotationMark className="quotationMark" />)}</p><h3>FURI improved my confidence in my ability to both independently and collaboratively produce and prototype a novel product.”</h3>`,
         link: "/",
       },
       {
