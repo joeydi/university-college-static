@@ -3,15 +3,20 @@ import React, { Component } from "react";
 import Flickity from "flickity";
 import "flickity/dist/flickity.min.css";
 
-import arrowRight from "../img/arrow-right.svg";
-
 class ThriveLinkSlider extends Component {
   componentDidMount() {
-    this.flickity = new Flickity(this.flickityEl, {
+    this.flickity = new Flickity(this.sliderEl, {
       arrowShape:
         "M76.536 98.536a5 5 0 01-6.6.415l-.472-.415-45-45a5 5 0 01-.415-6.6l.415-.472 45-45a5 5 0 017.487 6.6l-.415.472L35.075 50l41.46 41.464a5 5 0 01.416 6.6l-.415.472z",
       cellAlign: "left",
       pageDots: false,
+    });
+
+    // Wrap the last word in a span, so we can prevent the arrow from wrapping to a new line
+    this.sliderEl.querySelectorAll('.text').forEach(item => {
+      const text = item.innerText.trim();
+      const lastWordIndex = text.lastIndexOf(' ');
+      item.innerHTML = `${text.slice(0, lastWordIndex)} <span class="arrow-after">${text.slice(lastWordIndex)}</span>`;
     });
   }
 
@@ -26,14 +31,12 @@ class ThriveLinkSlider extends Component {
             </div>
           </div>
 
-          <div className="links" ref={(el) => (this.flickityEl = el)}>
+          <div className="links" ref={(el) => (this.sliderEl = el)}>
             {this.props.items.map((item, index) => (
               <a href={item.url} key={index}>
                 <span className="bg"></span>
                 <span className="text">
                   {item.title}
-                  {"\u00A0"}
-                  <img src={arrowRight} alt="" />
                 </span>
               </a>
             ))}

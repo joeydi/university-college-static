@@ -138,3 +138,20 @@ li {
     font-size: rem(15px);
   }
 }
+
+.font-weight-medium {
+  font-weight: $font-weight-medium !important;
+}
+
+// Colors
+
+.text-white { color: $white; }
+.text-lighter-grey { color: $lighter-grey; }
+.text-light-grey { color: $light-grey; }
+.text-grey { color: $grey; }
+.text-dark-grey { color: $dark-grey; }
+.text-darker-grey { color: $darker-grey; }
+.text-darkest-grey { color: $darkest-grey; }
+.text-black { color: $black; }
+.text-maroon { color: $maroon; }
+.text-gold { color: $gold; }

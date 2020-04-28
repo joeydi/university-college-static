@@ -6,7 +6,7 @@ const ThriveText = ({ style, content }) => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-8">
-            <div style={style}>{content}</div>
+            <div className="lead" style={style}>{content}</div>
           </div>
         </div>
       </div>
