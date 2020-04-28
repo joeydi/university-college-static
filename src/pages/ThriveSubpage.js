@@ -24,6 +24,8 @@ import undergraduateResearchAndCreativeActivity from "../img/page-undergraduate-
 import firstYearExperience1 from "../img/card-first-year-experience-1.jpg";
 import firstYearExperience2 from "../img/card-first-year-experience-2.jpg";
 import firstYearExperience3 from "../img/card-first-year-experience-3.jpg";
+import firstYearExperienceResources from "../img/card-first-year-experience-resources.svg";
+
 import coopInternships1 from "../img/card-coop-internships-1.jpg";
 import coopInternshipsHandshake from "../img/card-coop-internships-handshake.png";
 
@@ -75,7 +77,7 @@ const pages = [
       {
         component: ThriveGoldCard,
         title: "Resources for First Year Engineering Students",
-        content: "<p>Engineering-specific resources, guides, and FAQs.</p>",
+        content: `<p class="text-center"><img src="${firstYearExperienceResources}" alt="" /></p><p>Engineering-specific resources, guides, and FAQs.</p>`,
         link: "/",
       },
       {
