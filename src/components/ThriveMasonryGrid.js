@@ -3,7 +3,7 @@ import Masonry from "masonry-layout";
 import imagesLoaded from "imagesloaded";
 
 class ThriveMasonryGrid extends Component {
-  componentDidUpdate() {
+  initMasonry() {
     const masonry = new Masonry(this.masonryEl, {
       itemSelector: ".grid-item",
       percentPosition: true,
@@ -12,6 +12,14 @@ class ThriveMasonryGrid extends Component {
     imagesLoaded(this.masonryEl).on("progress", () => {
       masonry.layout();
     });
+  }
+
+  componentDidMount() {
+    this.initMasonry();
+  }
+
+  componentDidUpdate() {
+    this.initMasonry();
   }
 
   render() {
