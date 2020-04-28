@@ -7,7 +7,7 @@ const ThriveFooter = ({ heading, description }) => {
         <div className="row justify-content-center">
           <div className="col-10 col-md-8">
             <h2>{heading}</h2>
-            <p class="font-weight-bold mb-0">{description}</p>
+            <p className="font-weight-bold mb-0">{description}</p>
           </div>
         </div>
       </div>
