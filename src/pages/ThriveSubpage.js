@@ -28,22 +28,49 @@ const pages = [
       {
         component: ThrivePhotoCard,
         title: "VIP Freshmen Coaching",
-        content: "Free academic support, information, skill development and advocacy.",
+        content: "<p>Free academic support, information, skill development and advocacy.</p>",
         image: "http://www.fillmurray.com/360/480",
         link: "/",
       },
       {
         component: ThriveGoldCard,
-        title: "VIP Freshmen Coaching",
-        content: "Free academic support, information, skill development and advocacy.",
-        image: "http://www.fillmurray.com/360/480",
+        title: "Adulting 101",
+        content:
+          "<h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>",
         link: "/",
       },
       {
-        component: ThriveBackgroundCard,
-        title: "VIP Freshmen Coaching",
-        content: "Free academic support, information, skill development and advocacy.",
-        image: "http://www.fillmurray.com/360/480",
+        component: ThrivePhotoCard,
+        title: "First-Year Success Center",
+        content: "<h1>24k</h1><p>visits per semester, with centers on four campuses.</p>",
+        image: "http://www.fillmurray.com/380/480",
+        link: "/",
+      },
+      {
+        component: ThriveGoldCard,
+        title: "Resources for First Year Engineering Students",
+        content: "<p>Engineering-specific resources, guides, and FAQs.</p>",
+        link: "/",
+      },
+      {
+        component: ThrivePhotoCard,
+        title: "Residential college community ",
+        content:
+          "<p>First-year Sun Devils live with others who share their major and career interests.</p>",
+        image: "http://www.fillmurray.com/380/480",
+        link: "/",
+      },
+      {
+        component: ThriveGoldCard,
+        title: "Global Freshmen Academy",
+        content:
+          "<h2>Learn before paying</h2><p>By allowing students to learn, explore and complete courses before applying or paying for credit, the Global Freshman Academy reimagines the freshman year and reduces academic and monetary stress while opening a new path to a college degree for many students.</p>",
+        link: "/",
+      },
+      {
+        component: ThriveGoldCard,
+        title: "First-year finances",
+        content: "<p>Comprehensive resource page for first-year financial questions.</p>",
         link: "/",
       },
     ],
@@ -54,6 +81,7 @@ const pages = [
     heading: "Co-op Internships",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+    cards: [],
   },
   {
     image: learningCommunities,
@@ -61,6 +89,7 @@ const pages = [
     heading: "Learning Communities",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+    cards: [],
   },
   {
     image: seniorCapstones,
@@ -68,6 +97,7 @@ const pages = [
     heading: "Senior Capstones",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+    cards: [],
   },
   {
     image: serviceLearning,
@@ -75,6 +105,7 @@ const pages = [
     heading: "Service Learning",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+    cards: [],
   },
   {
     image: undergraduateResearchAndCreativeActivity,
@@ -82,6 +113,7 @@ const pages = [
     heading: "Undergraduate Research and Creative Activity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+    cards: [],
   },
 ];
 

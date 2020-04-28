@@ -6,7 +6,7 @@ const ThriveMasonryGrid = ({ cards }) => {
       <div className="container">
         <div className="row">
           {cards.map((card, index) => (
-            <div key={index} className="col-sm-6 col-md-4 mb-20">{card.component(card)}</div>
+            <div key={index} className="col-sm-6 col-lg-4 mb-20">{card.component(card)}</div>
           ))}
         </div>
       </div>

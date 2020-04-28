@@ -41,10 +41,14 @@ h2,
   }
 
   @include lg {
-    font-size: rem(45px);
+    font-size: rem(40px);
   }
 
   @include xl {
+    font-size: rem(45px);
+  }
+
+  @include xxl {
     font-size: rem(55px);
   }
 }
@@ -123,11 +127,11 @@ li {
 .eyebrow {
   font-size: 1rem;
   font-weight: $font-weight-medium;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   span {
-    display: inline-block;
+    display: inline;
     padding: 0.5em 1em;
     box-decoration-break: clone;
     background-color: $white;
