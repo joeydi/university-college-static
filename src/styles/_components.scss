@@ -920,7 +920,7 @@ section.thrive-footer {
     position: relative;
     z-index: 2;
     margin-top: auto;
-    padding: 20px 60px 20px 20px;
+    padding: 20px 20px 30px;
     @extend .lead;
     font-weight: $font-weight-medium;
     line-height: 1.15;
@@ -943,6 +943,10 @@ section.thrive-footer {
     p {
       width: calc(100% - 40px);
     }
+
+    img {
+      max-width: 90%;
+    }
   }
 
   .bg {
@@ -953,7 +957,7 @@ section.thrive-footer {
     position: absolute;
     z-index: 2;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     display: block;
     width: 20px;
     height: 20px;
@@ -972,12 +976,12 @@ section.thrive-footer {
     }
 
     .content {
-      padding: 35px;
+      padding: 15px 35px 45px;
     }
 
     .arrow {
       right: 35px;
-      bottom: 35px;
+      bottom: 45px;
     }
   }
 
@@ -1045,7 +1049,7 @@ section.thrive-footer {
     z-index: 2;
     margin-top: auto;
     margin-bottom: -10px;
-    padding: 20px 60px 30px 20px;
+    padding: 20px 20px 40px 20px;
     @extend .lead;
     font-weight: $font-weight-medium;
     line-height: 1.15;
@@ -1080,7 +1084,7 @@ section.thrive-footer {
     position: absolute;
     z-index: 2;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     display: block;
     width: 20px;
     height: 20px;
@@ -1094,12 +1098,12 @@ section.thrive-footer {
     }
 
     .content {
-      padding: 35px 60px 45px 35px;
+      padding: 35px 35px 55px 35px;
     }
 
     .arrow {
       right: 35px;
-      bottom: 35px;
+      bottom: 45px;
     }
   }
 
@@ -1141,7 +1145,7 @@ section.thrive-footer {
     position: relative;
     z-index: 2;
     margin-top: auto;
-    padding: 20px 60px 20px 20px;
+    padding: 20px;
     @extend .lead;
     font-weight: $font-weight-medium;
     line-height: 1.15;
@@ -1175,7 +1179,7 @@ section.thrive-footer {
     position: absolute;
     z-index: 2;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     display: block;
     width: 20px;
     height: 20px;
@@ -1194,7 +1198,7 @@ section.thrive-footer {
 
     .arrow {
       right: 35px;
-      bottom: 35px;
+      bottom: 45px;
     }
   }
 
