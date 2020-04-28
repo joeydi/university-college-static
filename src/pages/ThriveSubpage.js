@@ -2,9 +2,13 @@ import React from "react";
 
 import ThriveHeader from "../components/ThriveHeader";
 import ThriveTextStats from "../components/ThriveTextStats";
-import ThriveMasonry from "../components/ThriveMasonry";
+import ThriveMasonryGrid from "../components/ThriveMasonryGrid";
 import ThrivePageNav from "../components/ThrivePageNav";
 import ThriveFooter from "../components/ThriveFooter";
+
+import ThriveGoldCard from "../components/ThriveGoldCard";
+import ThrivePhotoCard from "../components/ThrivePhotoCard";
+import ThriveBackgroundCard from "../components/ThriveBackgroundCard";
 
 import firstYearExperience from "../img/page-first-year-experience.jpg";
 import coopInternships from "../img/page-coop-internships.jpg";
@@ -20,6 +24,29 @@ const pages = [
     heading: "First Year Experience",
     description:
       "First year experience programs not only influence academic success, but they also drive emotional support and connections that are key to student success as a whole throughout a college education.",
+    cards: [
+      {
+        component: ThrivePhotoCard,
+        title: "VIP Freshmen Coaching",
+        content: "Free academic support, information, skill development and advocacy.",
+        image: "http://www.fillmurray.com/360/480",
+        link: "/",
+      },
+      {
+        component: ThriveGoldCard,
+        title: "VIP Freshmen Coaching",
+        content: "Free academic support, information, skill development and advocacy.",
+        image: "http://www.fillmurray.com/360/480",
+        link: "/",
+      },
+      {
+        component: ThriveBackgroundCard,
+        title: "VIP Freshmen Coaching",
+        content: "Free academic support, information, skill development and advocacy.",
+        image: "http://www.fillmurray.com/360/480",
+        link: "/",
+      },
+    ],
   },
   {
     image: coopInternships,
@@ -72,7 +99,7 @@ const ThriveSubpage = ({ match }) => {
           content={page.description}
           style={{ textAlign: "center", fontWeight: 300 }}
         />
-        <ThriveMasonry />
+        <ThriveMasonryGrid cards={page.cards} />
         <ThrivePageNav previous={previousPage} next={nextPage} />
         <ThriveFooter />
       </>

@@ -8,8 +8,12 @@ body {
   }
 }
 
-::selection { background: $gold; }
-::-moz-selection { background: $gold; }
+::selection {
+  background: $gold;
+}
+::-moz-selection {
+  background: $gold;
+}
 
 h1,
 .h1 {
@@ -117,25 +121,17 @@ li {
 }
 
 .eyebrow {
-  font-size: rem(18px);
-  font-weight: $font-weight-light;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-}
-
-.eyebrow-sm {
-  font-size: rem(13px);
-  font-weight: $font-weight-light;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-}
-
-.small {
-  font-size: rem(14px);
+  font-size: 1rem;
   font-weight: $font-weight-medium;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
 
-  @include md {
-    font-size: rem(15px);
+  span {
+    display: inline-block;
+    padding: 0.5em 1em;
+    box-decoration-break: clone;
+    background-color: $white;
+    color: $black;
   }
 }
 
@@ -145,13 +141,33 @@ li {
 
 // Colors
 
-.text-white { color: $white; }
-.text-lighter-grey { color: $lighter-grey; }
-.text-light-grey { color: $light-grey; }
-.text-grey { color: $grey; }
-.text-dark-grey { color: $dark-grey; }
-.text-darker-grey { color: $darker-grey; }
-.text-darkest-grey { color: $darkest-grey; }
-.text-black { color: $black; }
-.text-maroon { color: $maroon; }
-.text-gold { color: $gold; }
+.text-white {
+  color: $white;
+}
+.text-lighter-grey {
+  color: $lighter-grey;
+}
+.text-light-grey {
+  color: $light-grey;
+}
+.text-grey {
+  color: $grey;
+}
+.text-dark-grey {
+  color: $dark-grey;
+}
+.text-darker-grey {
+  color: $darker-grey;
+}
+.text-darkest-grey {
+  color: $darkest-grey;
+}
+.text-black {
+  color: $black;
+}
+.text-maroon {
+  color: $maroon;
+}
+.text-gold {
+  color: $gold;
+}
