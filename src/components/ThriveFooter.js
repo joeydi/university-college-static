@@ -2,12 +2,12 @@ import React from "react";
 
 const ThriveFooter = ({ heading, description }) => {
   return (
-    <section className="thrive-footer section-padding">
+    <section className="thrive-footer section-padding bg-lighter-grey">
       <div className="container text-center">
         <div className="row justify-content-center">
           <div className="col-10 col-md-8">
             <h2>{heading}</h2>
-            <p>{description}</p>
+            <p class="font-weight-bold mb-0">{description}</p>
           </div>
         </div>
       </div>
