@@ -33,42 +33,42 @@ ThriveIconCardGrid.defaultProps = {
       icon: icon1,
       title: "First Year Experience",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "First year experience programs not only influence academic success, but they also drive emotional support and connections that are key to student success as a whole throughout a college education.",
       link: "/thrive/first-year-experience",
     },
     {
       icon: icon2,
       title: "Co-op Internships",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "Co-ops are closely supervised internships or practicums which brings work experience into a learner’s academic program.",
       link: "/thrive/coop-internships",
     },
     {
       icon: icon3,
       title: "Learning Communities",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "Learning communities are groups of learners who share common academic goals and work closely together in varying ways, whether it’s taking multiple courses together as a cohort, living in the same locations, or participating in the same general academic activities.",
       link: "/thrive/learning-communities",
     },
     {
       icon: icon4,
       title: "Senior Capstones",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "Spanning everything from a thesis to a performance to an art exhibit, capstones are culminating experiences, usually in senior year, that bring together the full wealth of a learner’s experiences.",
       link: "/thrive/senior-capstones",
     },
     {
       icon: icon5,
       title: "Service Learning",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "Learners connect course concepts to real world immersive activities through community engagement, developing perspectives and strategies in applying their skills and knowledge to the world.",
       link: "/thrive/service-learning",
     },
     {
       icon: icon6,
       title: "Undergraduate Research and Creative Activity",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus a sodales mauris, vel gravida enim mauris velit tellus, faucibus vel nulla ac, commodo tempor diam.",
+        "ASU undergraduates receive many opportunities to conduct research or creative work to produce original scholarly results, often with opportunities for funding, stipends, and with specialized faculty support.",
       link: "/thrive/undergraduate-research-and-creative-activity",
     },
   ],
