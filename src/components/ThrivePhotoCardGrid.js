@@ -42,55 +42,55 @@ const ThrivePhotoCardGrid = (props) => {
 ThrivePhotoCardGrid.defaultProps = {
   heading: "The toolkit of the 21st-century learner",
   subheading:
-    "An adaptive hub of lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt mauris vel posuere porttitor. Ut vel ex tellus. Nunc placerat et sem eu iaculis. Nullam viverra, turpis nec vestibulum sollicitudin.",
+    "Every learner journey is unique. University College tailors personalized experiences for each individual Sun Devil to best support their academic and professional goals, whether it’s through our success centers on every campus, specialized success courses, tutoring, or the integration of work experience into the university experience.",
   items: [
     {
       image: image1,
       title: "American Indian Student Support Services",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "Students progress towards becoming self-reliant individuals who effectively give back to their families and communities.",
       link: "",
     },
     {
       image: image2,
       title: "First-Year Success Center",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "An award-winning Center that treats every student like a VIP through a variety of peer coaching services.",
       link: "",
     },
     {
       image: image3,
       title: "The LEAD Program",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "Provides students with robust learning opportunities throughout their first year at ASU.",
       link: "",
     },
     {
       image: image4,
       title: "University Academic Success Programs",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "Provides free services to help students succeed academically at ASU.",
       link: "",
     },
     {
       image: image5,
       title: "Success Courses",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "What if you could change your academic trajectory with a single course?",
       link: "",
     },
     {
       image: image6,
       title: "Experiential Learning Network",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "Skills and knowledge are acquired firsthand through research, study abroad, internships, service learning and field practicums.",
       link: "",
     },
     {
       image: image7,
       title: "Major and Career Exploration",
       description:
-        "Magna nulla ea esse incididunt nostrud cillum do in adipisicing pariatur irure dolor nostrud aute.",
+        "This program will help students find their way to a major and a career goal that is exciting to them.",
       link: "",
     },
   ],

@@ -50,7 +50,7 @@ class ThriveLinkSlider extends Component {
 ThriveLinkSlider.defaultProps = {
   heading: "Helping students thrive",
   subheading:
-    "Personalized learning experiences enable students to lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt mauris vel posuere porttitor. Ut vel ex tellus. Nunc placerat et sem eu iaculis. Nullam viverra, turpis nec.",
+    "The ingredients to learner success can be found in the classroom and beyond. ASU is committed to helping every individual Sun Devil thrive through various facets of the learner experience. Explore these areas and see why ASU is a national leader for supporting student success.",
   items: [
     {
       title: "First Year Experience",
