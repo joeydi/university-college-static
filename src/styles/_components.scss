@@ -117,31 +117,100 @@ section.thrive-text-stats {
     margin: 0 auto;
   }
 
+  .stat-icon {
+    display: inline-block;
+    width: rem(40px);
+    height: rem(40px);
+    margin-bottom: 1rem;
+  }
+
   .stat-number {
     @extend .h2;
+    font-size: rem(40px);
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $maroon;
   }
 
   .stat-description {
-    font-weight: $font-weight-medium;
+    font-size: 1rem;
+  }
+
+  .stat-source {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+
+    dt {
+      color: $maroon;
+      text-decoration: underline;
+      font-weight: $font-weight-regular;
+      cursor: pointer;
+    }
+
+    dd {
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      width: 240px;
+      padding: 1rem;
+      background: $darker-grey;
+      color: $white;
+      border-radius: 3px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      font-size: rem(14px);
+      opacity: 0;
+      visibility: hidden;
+      transform-origin: 50% 100%;
+      transform: translateX(-50%) translateY(10px) scale(0.9);
+      transition: visibility 0s linear 0.25s, opacity 0.25s linear, transform 0.25s $ease-in;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 10px);
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 8px 0 8px;
+        border-color: $darker-grey transparent transparent transparent;
+      }
+    }
+
+    dt:hover + dd {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) scale(1);
+      transition: visibility 0s linear 0s, opacity 0.25s linear, transform 0.5s $ease-out;
+    }
   }
 
   @include md {
-    .stat-description {
-      font-size: rem(18px);
+    .stat-icon {
+      width: rem(50px);
+      height: rem(50px);
+    }
+
+    .stat-number {
+      font-size: rem(50px);
     }
   }
 
   @include lg {
     .stat {
-      max-width: 280px;
+      max-width: 260px;
+    }
+
+    .stat-icon {
+      width: rem(65px);
+      height: rem(65px);
     }
 
     .stat-number {
       font-size: rem(65px);
-    }
-
-    .stat-description {
-      font-size: rem(20px);
     }
   }
 }

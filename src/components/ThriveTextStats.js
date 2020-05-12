@@ -1,21 +1,34 @@
 import React from "react";
 
+import iconStatGrowth from "../img/icon-stat-growth.svg";
+
 const ThriveTextStats = ({ style, content, stats }) => {
   return (
     <section className="thrive-text-stats section-margin">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-8">
-          <div className="lead" style={style}>{content}</div>
+            <div className="lead" style={style}>
+              {content}
+            </div>
           </div>
         </div>
 
-        <div className="row mt-60">
+        <div className="row mt-60 justify-content-around">
           {stats.map((item, index) => (
             <div className="col-sm-6 col-md-3" key={index}>
               <div className="stat text-center">
-                <strong className="stat-number">{item.number}</strong>
-                <p className="stat-description">{item.description}</p>
+                {item.icon && <img className="stat-icon" src={item.icon} alt="" />}
+                {item.number && <strong className="stat-number">{item.number}</strong>}
+                <div className="stat-description">
+                  {item.description}
+                  {item.source && (
+                    <dl className="stat-source">
+                      <dt>Source</dt>
+                      <dd>{item.source}</dd>
+                    </dl>
+                  )}
+                </div>
               </div>
             </div>
           ))}
@@ -38,7 +51,7 @@ ThriveTextStats.defaultProps = {
       description: "of students will drop out in their first year at university",
     },
     {
-      number: "51%",
+      icon: iconStatGrowth,
       description: "of first year students leave for financial reasons",
     },
     {

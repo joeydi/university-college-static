@@ -49,6 +49,17 @@ import undergraduateResearchAndCreativeActivity2 from "../img/card-undergraduate
 import undergraduateResearchAndCreativeActivity3 from "../img/card-undergraduate-research-and-creative-activity-3.jpg";
 import undergraduateResearchAndCreativeActivityLevels from "../img/card-undergraduate-research-and-creative-activity-levels.svg";
 
+import iconStatChat from "../img/icon-stat-chat.svg";
+import iconStatExposure from "../img/icon-stat-exposure.svg";
+import iconStatGrades from "../img/icon-stat-grades.svg";
+import iconStatGroup from "../img/icon-stat-group.svg";
+import iconStatGrowth from "../img/icon-stat-growth.svg";
+import iconStatHands from "../img/icon-stat-hands.svg";
+import iconStatResearch from "../img/icon-stat-research.svg";
+import iconStatStars from "../img/icon-stat-stars.svg";
+import iconStatThumbsUp from "../img/icon-stat-thumbs-up.svg";
+import iconStatTransform from "../img/icon-stat-transform.svg";
+
 const pages = [
   {
     image: firstYearExperience,
@@ -56,6 +67,24 @@ const pages = [
     heading: "First Year Experience",
     description:
       "First year experience programs not only influence academic success, but they also drive emotional support and connections that are key to student success as a whole throughout a college education.",
+    stats: [
+      {
+        number: "74%",
+        description: "of students will drop out in their first year at university.",
+      },
+      {
+        number: "51%",
+        description: "of first year students leave for financial reasons.",
+      },
+      {
+        number: "89%",
+        description: "of low-income students leave before attaining a degree.",
+      },
+      {
+        number: "$21k",
+        description: "Dropouts earn $21k less on average than graduates.",
+      },
+    ],
     cards: [
       {
         component: ThrivePhotoCard,
@@ -67,8 +96,9 @@ const pages = [
       {
         component: ThriveGoldCard,
         title: "Adulting 101",
-        content:
-          `<p>${ReactDOMServer.renderToString(<QuotationMark className="quotationMark" />)}</p><h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>`,
+        content: `<p>${ReactDOMServer.renderToString(
+          <QuotationMark className="quotationMark" />
+        )}</p><h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>`,
         link: "/",
       },
       {
@@ -113,7 +143,26 @@ const pages = [
     slug: "coop-internships",
     heading: "Co-op Internships",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+      "Co-ops are closely supervised internships or practicums which brings work experience into a learner’s academic program. Learners benefit from these professional experiences, and get opportunities to apply their academic skills and knowledge in real-world settings.",
+    stats: [
+      {
+        number: "60%",
+        description:
+          "of ASU undergraduate degree recipients graduate with practicum, internship, co-op, or clinical placement.",
+      },
+      {
+        icon: iconStatGrowth,
+        description:
+          "Cooperative graduates profited from their cooperative experiences by acquiring more effective learning strategies, accruing greater knowledge, and adjusting to organizational life more effectively.",
+        source: "Gardner, Philip D. & Kozlowski, Steven W. J. (1993)",
+      },
+      {
+        icon: iconStatHands,
+        description:
+          "Students who have completed internships are significantly more likely to receive full‐time job offers than non‐interns, and more likely to receive higher starting salaries.",
+        source: "Gault, J., Leach, E. and Duey, M. (2010)",
+      },
+    ],
     cards: [
       {
         component: ThriveGoldCard,
@@ -143,7 +192,27 @@ const pages = [
     slug: "learning-communities",
     heading: "Learning Communities",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+      "Learning communities are groups of learners who share common academic goals and work closely together in varying ways, whether it’s taking multiple courses together as a cohort, living in the same locations, or participating in the same general academic activities. Learning communities enable learners to take their learning beyond the classroom while building strong relationships with faculty and fellow students.",
+    stats: [
+      {
+        icon: iconStatGroup,
+        description:
+          "Students of disadvantaged backgrounds often lack the social and cultural capital to immerse into and benefit fully from university environments.",
+        source: "(Forsyth & Furlong, 2003)",
+      },
+      {
+        icon: iconStatGrades,
+        description:
+          "Students in learning communities had higher grade point averages, earned more hours, and were more satisfied with their college experiences.",
+        source: "Baker, S., & Pomerantz, N. (2000)",
+      },
+      {
+        icon: iconStatThumbsUp,
+        description:
+          "Participating in a learning community is positively linked to engagement as well as student self-reported outcomes and overall satisfaction with college.",
+        source: "Zhao, C., Kuh, G.D. (2004).",
+      },
+    ],
     cards: [
       {
         component: ThrivePhotoCard,
@@ -186,7 +255,29 @@ const pages = [
     slug: "senior-capstones",
     heading: "Senior Capstones",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+      "Spanning everything from a thesis to a performance to an art exhibit, capstones are culminating experiences, usually in senior year, that bring together the full wealth of a learner’s experiences.",
+    stats: [
+      {
+        number: "74%",
+        description: "of ASU undergraduate degree recipients graduate with a capstone experience.",
+      },
+      {
+        icon: iconStatChat,
+        description:
+          "Participation in senior capstones improves skills in writing, oral communication, project management, and research.",
+      },
+      {
+        icon: iconStatTransform,
+        description:
+          "Senior capstones are “transformative learning experience because of their positive contributions to desired learning outcomes,” and a “high-impact practice”.",
+        source: "(Kuh 2008)",
+      },
+      {
+        icon: iconStatStars,
+        description:
+          "Completion of senior capstones demonstrate student mastery and practical application of their chosen field of study.",
+      },
+    ],
     cards: [
       {
         component: ThriveGoldCard,
@@ -206,8 +297,9 @@ const pages = [
       {
         component: ThriveGoldCard,
         title: "FURI Symposium",
-        content:
-          `<p>${ReactDOMServer.renderToString(<QuotationMark className="quotationMark" />)}</p><h3>FURI improved my confidence in my ability to both independently and collaboratively produce and prototype a novel product.”</h3>`,
+        content: `<p>${ReactDOMServer.renderToString(
+          <QuotationMark className="quotationMark" />
+        )}</p><h3>FURI improved my confidence in my ability to both independently and collaboratively produce and prototype a novel product.”</h3>`,
         link: "/",
       },
       {
@@ -225,7 +317,26 @@ const pages = [
     slug: "service-learning",
     heading: "Service Learning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+      "Service Learning is a key component of the learner experience. Learners connect course concepts to real world immersive activities through community engagement, developing perspectives and strategies in applying their skills and knowledge to the world.",
+    stats: [
+      {
+        number: "27%",
+        description: "Volunteering is associated with a 27% higher odds of employment.",
+        source: "(Corporation for National and Community Service)",
+      },
+      {
+        number: "82%",
+        description:
+          "Employers are 82% more likely to choose a candidate with volunteering experience.",
+        source: "(Corporation for National and Community Service)",
+      },
+      {
+        number: "$25.43",
+        description:
+          "Valued at $25.43 per hour, volunteering makes up a significant contributor to local and global communities.",
+        source: "(Independent Sector)",
+      },
+    ],
     cards: [
       {
         component: ThrivePhotoCard,
@@ -261,7 +372,30 @@ const pages = [
     slug: "undergraduate-research-and-creative-activity",
     heading: "Undergraduate Research and Creative Activity",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo mauris tempor malesuada feugiat. Suspendisse tincidunt mauris orci, vel placerat neque imperdiet eget.",
+      "Research is a linchpin of a learner’s university experience. ASU undergraduates receive many opportunities to conduct research or creative work to produce original scholarly results, often with opportunities for funding, stipends, and with specialized faculty support.",
+    stats: [
+      {
+        number: "63%",
+        description: "of ASU undergraduate degree recipients graduate with research experience",
+      },
+      {
+        icon: iconStatExposure,
+        description:
+          "Many students discover their passion for research and specific subject areas through exposure to research as undergraduates.",
+      },
+      {
+        number: "79%",
+        description:
+          "of employers want undergraduates to “complete a project prior to graduation that demonstrates their acquired knowledge and skills.”",
+        source:
+          "[From “It Takes More than a Major: Employer Priorities for College Learning and Student Success,” Association of American Colleges and Universities, 2013]",
+      },
+      {
+        icon: iconStatResearch,
+        description:
+          "Undergraduate research provides students the opportunity to develop interdisciplinary, communication, and teamwork skills crucial to their careers.",
+      },
+    ],
     cards: [
       {
         component: ThriveGoldCard,
@@ -329,6 +463,7 @@ const ThriveSubpage = ({ match }) => {
         <ThriveHeader heading={page.heading} />
         <ThriveTextStats
           content={page.description}
+          stats={page.stats}
           style={{ textAlign: "center", fontWeight: 300 }}
         />
         <ThriveMasonryGrid cards={page.cards} />
