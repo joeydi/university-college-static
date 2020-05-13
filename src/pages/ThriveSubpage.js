@@ -69,7 +69,7 @@ const pages = [
       "First year experience programs not only influence academic success, but they also drive emotional support and connections that are key to student success as a whole throughout a college education.",
     stats: [
       {
-        number: "74%",
+        number: "28%",
         description: "of students will drop out in their first year at university.",
       },
       {
