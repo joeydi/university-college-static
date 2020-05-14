@@ -85,7 +85,7 @@ ThrivePhotoCardGrid.defaultProps = {
       image: image6,
       title: "Experiential Learning Network",
       description:
-        "Skills and knowledge are acquired firsthand through research, study abroad, internships, service learning and field practicums.",
+        "Incorporate professional skills into your university journey through firsthand experiences in research, study abroad, internships, service learning, and more.",
       link: "",
     },
     {
