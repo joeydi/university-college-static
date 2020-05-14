@@ -26,7 +26,9 @@ const ThrivePhotoCardGrid = (props) => {
             <div className="col-md-6 col-lg-4 mb-10" key={index}>
               <a href={item.link} className="photo-card">
                 <div className="photo-card-content">
-                  <strong>{item.title} <img className="arrow" src={arrowUp} alt="" /></strong>
+                  <strong>
+                    {item.title} <img className="arrow" src={arrowUp} alt="" />
+                  </strong>
                   <span>{item.description}</span>
                 </div>
                 <img src={item.image} alt="" />
@@ -42,7 +44,7 @@ const ThrivePhotoCardGrid = (props) => {
 ThrivePhotoCardGrid.defaultProps = {
   heading: "The toolkit of the 21st-century learner",
   subheading:
-    "Every learner journey is unique. University College tailors personalized experiences for each individual Sun Devil to best support their academic and professional goals, whether it’s through our success centers on every campus, specialized success courses, tutoring, or the integration of work experience into the university experience.",
+    "Every learner journey is unique. University College tailors personalized experiences for each individual Sun Devil to best support their academic and professional goals, whether it’s through our success centers on every campus, specialized success courses, tutoring, or the integration of work experience into the university journey.",
   items: [
     {
       image: image1,
@@ -68,15 +70,13 @@ ThrivePhotoCardGrid.defaultProps = {
     {
       image: image4,
       title: "University Academic Success Programs",
-      description:
-        "Provides free services to help students succeed academically at ASU.",
+      description: "Provides free services to help students succeed academically at ASU.",
       link: "",
     },
     {
       image: image5,
       title: "Success Courses",
-      description:
-        "What if you could change your academic trajectory with a single course?",
+      description: "What if you could change your academic trajectory with a single course?",
       link: "",
     },
     {
