@@ -64,7 +64,7 @@ ThrivePhotoCardGrid.defaultProps = {
       image: image3,
       title: "The LEAD Program",
       description:
-        "Provides students with robust learning opportunities throughout their first year at ASU.",
+        "Build skills for academic and professional success through a series of courses and strong, meaningful bonds with mentors and professors.",
       link: "",
     },
     {
