@@ -70,7 +70,8 @@ ThrivePhotoCardGrid.defaultProps = {
     {
       image: image4,
       title: "University Academic Success Programs",
-      description: "Provides free services to help students succeed academically at ASU.",
+      description:
+        "Access free comprehensive services to help your academic success at ASU, from tutoring and supplemental instruction to graduate support and study resources.",
       link: "",
     },
     {
