@@ -77,7 +77,8 @@ ThrivePhotoCardGrid.defaultProps = {
     {
       image: image5,
       title: "Success Courses",
-      description: "What if you could change your academic trajectory with a single course?",
+      description:
+        "Take courses that build crucial skills for academic success. Improve your study skills, develop success mindsets, boost your GPA, and more.",
       link: "",
     },
     {
