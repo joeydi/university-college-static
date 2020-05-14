@@ -50,7 +50,7 @@ ThrivePhotoCardGrid.defaultProps = {
       image: image1,
       title: "American Indian Student Support Services",
       description:
-        "Students progress towards becoming self-reliant individuals who effectively give back to their families and communities.",
+        "AISSS is a home to indigenous Sun Devils from more than 230 tribal nations, supporting their success through shared values in tradition, kinship, and resilience.",
       link: "",
     },
     {
