@@ -91,8 +91,7 @@ ThrivePhotoCardGrid.defaultProps = {
     {
       image: image7,
       title: "Major and Career Exploration",
-      description:
-        "This program will help students find their way to a major and a career goal that is exciting to them.",
+      description: "Explore and design your career and major pathway.",
       link: "",
     },
   ],
