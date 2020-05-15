@@ -91,7 +91,7 @@ const pages = [
         title: "VIP Freshmen Coaching",
         content: "<p>Free academic support, information, skill development and advocacy.</p>",
         image: firstYearExperience1,
-        link: "/",
+        link: "https://fys.asu.edu/peer-coaching/freshman-coaching",
       },
       {
         component: ThriveGoldCard,
@@ -99,20 +99,20 @@ const pages = [
         content: `<p>${ReactDOMServer.renderToString(
           <QuotationMark className="quotationMark" />
         )}</p><h2>Life can be hard but it’s all figureoutable.”</h2><p>Sun Devils turn to ASU Adulting 101, a student-run blog, to learn (some of) the things not taught in class.</p>`,
-        link: "/",
+        link: "https://adulting.asu.edu/",
       },
       {
         component: ThrivePhotoCard,
         title: "First-Year Success Center",
         content: "<h1>24k</h1><p>visits per semester, with centers on four campuses.</p>",
         image: firstYearExperience2,
-        link: "/",
+        link: "https://fys.asu.edu/",
       },
       {
         component: ThriveGoldCard,
         title: "Resources for First Year Engineering Students",
         content: `<p class="text-center"><img src="${firstYearExperienceResources}" alt="" /></p><p>Engineering-specific resources, guides, and FAQs.</p>`,
-        link: "/",
+        link: "https://career.engineering.asu.edu/guides/freshman-guide/",
       },
       {
         component: ThrivePhotoCard,
@@ -120,21 +120,21 @@ const pages = [
         content:
           "<p>First-year Sun Devils live with others who share their major and career interests.</p>",
         image: firstYearExperience3,
-        link: "/",
+        link: "https://thecollege.asu.edu/residential-college/communities",
       },
       {
         component: ThriveGoldCard,
         title: "Global Freshmen Academy",
         content:
           "<h2>Learn before paying</h2><p>By allowing students to learn, explore and complete courses before applying or paying for credit, the Global Freshman Academy reimagines the freshman year and reduces academic and monetary stress while opening a new path to a college degree for many students.</p>",
-        link: "/",
+        link: "https://gfa.asu.edu/global-freshman-academy",
       },
       {
         component: ThriveBackgroundCard,
         title: "First-year finances",
         content: "<p>Comprehensive resource page for first-year financial questions.</p>",
         image: firstYearExperience4,
-        link: "/",
+        link: "https://admission.asu.edu/aid/resident-first-year",
       },
     ],
   },
@@ -168,7 +168,7 @@ const pages = [
         component: ThriveGoldCard,
         title: "Handshake",
         content: `<p><img src="${coopInternshipsHandshake}" alt="" /></p><p>&nbsp;</p><h3>An online hub for all things career and internship.</h3>`,
-        link: "/",
+        link: "https://career.asu.edu/handshake",
       },
       {
         component: ThrivePhotoCard,
@@ -176,14 +176,14 @@ const pages = [
         content:
           "<p>Co-operatives which complement classroom experiences with paid, practical work experience.</p>",
         image: coopInternships1,
-        link: "/",
+        link: "https://career.engineering.asu.edu/co-op/",
       },
       {
         component: ThriveGoldCard,
         title: "Watts College Co-ops",
         content:
           "<p>All new undergraduate students will have a solutions-based learning class requirement that immerses them in the community and challenges them to think critically about public service within the context of their chosen field.</p>",
-        link: "/",
+        link: "https://publicservice.asu.edu/content/co-op",
       },
     ],
   },
@@ -220,7 +220,7 @@ const pages = [
         content:
           "<p>Providing students with robust learning opportunities throughout their first year at ASU.</p>",
         image: learningCommunities1,
-        link: "/",
+        link: "https://universitycollege.asu.edu/lead-program",
       },
       {
         component: ThriveGoldCard,
@@ -233,20 +233,20 @@ const pages = [
         title: "First-Year Communities",
         content: "<p>Campus housing connects students who share academic interests.</p>",
         image: learningCommunities2,
-        link: "/",
+        link: "https://thecollege.asu.edu/residential-college/communities",
       },
       {
         component: ThriveGoldCard,
         title: "Sustainability Science for Teachers",
         content:
           "<h2>SCN400</h2><p>Preparing preservice teachers with the knowledge, skills, and attitudes necessary to educate their future students regarding sustainability literacy.</p>",
-        link: "/",
+        link: "http://sse.asu.edu/courses/scn400/",
       },
       {
         component: ThriveGoldCard,
         title: "Student life",
         content: `<p><img src="${learningCommunitiesSunshine}" alt="" /></p><h1>300+</h1><p>sunny days per year.</p>`,
-        link: "/",
+        link: "https://wpcarey.asu.edu/undergraduate-degrees/student-housing",
       },
     ],
   },
@@ -284,7 +284,7 @@ const pages = [
         title: "InnovationSpace",
         content:
           "<h2>design + <br />engineering + <br />business + <br />sustainability</h2><p>Teams of top students from across the university research, develop, prototype and refine product concepts.</p>",
-        link: "/",
+        link: "https://design.asu.edu/innovationspace",
       },
       {
         component: ThrivePhotoCard,
@@ -292,7 +292,7 @@ const pages = [
         content:
           "<p>Giving students the opportunity to work closely with faculty and advance knowledge in the discipline in a meaningful way.</p>",
         image: seniorCapstones1,
-        link: "/",
+        link: "https://barretthonors.asu.edu/academics/thesis-and-creative-project",
       },
       {
         component: ThriveGoldCard,
@@ -300,7 +300,7 @@ const pages = [
         content: `<p>${ReactDOMServer.renderToString(
           <QuotationMark className="quotationMark" />
         )}</p><h3>FURI improved my confidence in my ability to both independently and collaboratively produce and prototype a novel product.”</h3>`,
-        link: "/",
+        link: "https://furi.engineering.asu.edu/symposium/",
       },
       {
         component: ThrivePhotoCard,
@@ -308,7 +308,7 @@ const pages = [
         content:
           "<h1>Top 20</h1><p>Our diverse programs are in the top 20 in the country and teach students to master their design disciplines.</p>",
         image: seniorCapstones2,
-        link: "/",
+        link: "https://design.asu.edu/student-work",
       },
     ],
   },
@@ -343,27 +343,28 @@ const pages = [
         title: "University Service Learning",
         content: "<h1>100</h1><p>hours of community service paired with academics.</p>",
         image: serviceLearning1,
-        link: "/",
+        link: "https://communityengagement.education.asu.edu/students/university-service-learning",
       },
       {
         component: ThriveGoldCard,
         title: "School of Sustainability ",
         content: `<p class="text-center"><img src="${serviceLearningLightbulb}" alt="" /></p><h3>Real World <br />Learning Experience</h3>`,
-        link: "/",
+        link: "https://schoolofsustainability.asu.edu/real-world-learning/engaging-with-the-world/",
       },
       {
         component: ThrivePhotoCard,
         title: "Global EPICS+",
         content: "<p>An engineering-based study abroad opportunity.</p>",
         image: serviceLearning2,
-        link: "/",
+        link:
+          "https://asunow.asu.edu/20190617-service-learning-trip-has-asu-and-vietnamese-students-co-develop-smart-farm-technology",
       },
       {
         component: ThriveGoldCard,
         title: "Watts College Co-ops",
         content:
           "<p>All new undergraduate students will have a solutions-based learning class requirement that immerses them in the community and challenges them to think critically about public service within the context of their chosen field.</p>",
-        link: "/",
+        link: "https://publicservice.asu.edu/content/co-op",
       },
     ],
   },
@@ -402,7 +403,7 @@ const pages = [
         title: "Barrett Honors Research ",
         content:
           "<h1>$750</h1><p>Barrett works with all ASU schools and colleges to identify and match students with research opportunities for up to $750 in research.</p>",
-        link: "/",
+        link: "https://barretthonors.asu.edu/academics/enhance-your-academic-experience/research",
       },
       {
         component: ThrivePhotoCard,
@@ -410,14 +411,14 @@ const pages = [
         content:
           "<p>Undergraduate students in the Fulton Schools of Engineering are highly encouraged to pursue a research project during their studies.</p>",
         image: undergraduateResearchAndCreativeActivity1,
-        link: "/",
+        link: "https://undergraduate-research.engineering.asu.edu/",
       },
       {
         component: ThriveGoldCard,
         title: "School of Life Sciences ",
         content:
           "<h3>SOLUR <br />program</h3><p>Promotes opportunities for undergraduates in the School of Life Sciences to participate in exciting biological research.</p>",
-        link: "/",
+        link: "https://sols.asu.edu/student-life/solur-undergraduate-research-program",
       },
       {
         component: ThrivePhotoCard,
@@ -425,13 +426,13 @@ const pages = [
         content:
           "<p>Watts students work with faculty on current research with provided funds, a symposium, and scholarship awards.</p>",
         image: undergraduateResearchAndCreativeActivity2,
-        link: "/",
+        link: "https://publicservice.asu.edu/content/undergraduate-research",
       },
       {
         component: ThriveGoldCard,
         title: "Sustainability Undergraduate Research",
         content: `<p class="text-center"><img src="${undergraduateResearchAndCreativeActivityLevels}" alt="" /></p><p>Sustainability students participate in three flexible levels of research experiences.</p>`,
-        link: "/",
+        link: "https://schoolofsustainability.asu.edu/sure/",
       },
       {
         component: ThrivePhotoCard,
@@ -439,13 +440,14 @@ const pages = [
         content:
           "<p>Students work one-on-one with faculty on cutting-edge research for 10-15 hours a week and a stipend.</p>",
         image: undergraduateResearchAndCreativeActivity3,
-        link: "/",
+        link:
+          "https://cronkite.asu.edu/real-world-experiences/cronkite-undergraduate-research-fellows-program",
       },
       {
         component: ThriveGoldCard,
         title: "Handshake",
         content: `<p><img src="${coopInternshipsHandshake}" alt="" /></p><p>&nbsp;</p><p>A matchmaking system to connect students and faculty with similar research interests.</p>`,
-        link: "/",
+        link: "https://asu.joinhandshake.com/login",
       },
     ],
   },
